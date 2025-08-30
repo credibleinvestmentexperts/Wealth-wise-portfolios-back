@@ -27,7 +27,12 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:5656"],
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:5656",
+      "https://www.wealthwiseportfolios.com",
+      "https://server.wealthwiseportfolios.com",
+    ],
     credentials: true,
   })
 );
