@@ -4,8 +4,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server",
-    "dev": "nodemon server",
-    "postinstall": "npm install --legacy-peer-deps"
+    "dev": "nodemon server"
   },
   "keywords": [],
   "author": "",
