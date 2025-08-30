@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KYC Submission - WealthWise</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #eef2f7;
+      margin: 0;
+      padding: 30px;
+    }
+    .container {
+      max-width: 650px;
+      background: #ffffff;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+      margin: auto;
+      border-top: 5px solid #0056b3;
+    }
+    h2 {
+      color: #0056b3;
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+    p {
+      color: #444;
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 8px 0;
+    }
+    .kyc-status {
+      font-weight: bold;
+      color: #ff9800;
+    }
+    .highlight {
+      color: #0056b3;
+      font-weight: bold;
+    }
+    .footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #777;
+      border-top: 1px solid #ddd;
+      padding-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>New KYC Submission</h2>
+    <p>Hello <span class="highlight">WealthWise Admin</span>,</p>
+    
+    <p>A new KYC document has been submitted by <strong>{{name}}</strong> for verification.</p>
+    <p><strong>KYC Status:</strong> <span class="kyc-status">Pending Review</span></p>
+    
+    <p>Kindly log in to your WealthWise dashboard to review and either <span class="highlight">Approve</span> or <span class="highlight">Reject</span> the submission.</p>
+    
+    <div class="footer">
+      <p>Best regards,<br>💼 WealthWise Compliance Team</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Withdrawal Approval - WealthWise</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8; /* --neutral-light */
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        background: #ffffff; /* --card-bg */
+        padding: 25px;
+        border-radius: 8px;
+        border: 1px solid #cfd8e3; /* --border */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        margin: auto;
+      }
+      .logo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .logo h2 {
+        margin: 0;
+        color: #1e3a8a; /* --brand-dark */
+        font-size: 22px;
+      }
+      h2 {
+        color: #1e3a8a; /* --heading */
+        margin-bottom: 15px;
+        font-size: 20px;
+      }
+      p {
+        color: #0a1f44; /* --text-dark */
+        font-size: 15px;
+        line-height: 1.6;
+      }
+      .highlight {
+        color: #1e40af; /* --accent */
+        font-weight: bold;
+      }
+      .amount {
+        font-weight: bold;
+        color: #e53935; /* red highlight for money */
+      }
+      .wallet {
+        font-weight: bold;
+        color: #1e3a8a;
+      }
+      .footer {
+        margin-top: 25px;
+        font-size: 14px;
+        color: #555555; /* --footer-text */
+        text-align: center;
+      }
+      strong {
+        color: #1e40af;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <h2>WealthWise</h2>
+      </div>
+
+      <!-- Greeting -->
+      <h2>Hello <span class="highlight">{{name}}</span>,</h2>
+
+      <!-- Content -->
+      <p>
+        Great news! Your withdrawal request has been <strong>approved</strong>.
+      </p>
+      <p>
+        A total of <span class="amount">${{amount}}</span> has been sent to your wallet:
+      </p>
+      <p class="wallet">{{walletAddress}}</p>
+
+      <!-- Closing -->
+      <p>Thank you for choosing <strong>WealthWise</strong>. We appreciate your trust in us.</p>
+
+      <!-- Footer -->
+      <p class="footer">Best regards,<br /><strong>WealthWise Transactions Team</strong></p>
+    </div>
+  </body>
+</html>

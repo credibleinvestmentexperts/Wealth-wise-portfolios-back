@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Account Role Updated – WealthWise</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8; /* --neutral-light */
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        background: #ffffff; /* --plan-bg */
+        padding: 25px;
+        border-radius: 8px;
+        border: 1px solid #cfd8e3; /* --nav-btns-bor-bottom */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        text-align: start;
+        margin: auto;
+      }
+      h2 {
+        color: #1e3a8a; /* --nav-linkss */
+        margin-bottom: 15px;
+        font-size: 22px;
+      }
+      p {
+        color: #0a1f44; /* --text-dark */
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 10px 0;
+      }
+      .highlight {
+        font-weight: bold;
+        color: #1e40af; /* --primary-accent-alt */
+      }
+      .cta-button {
+        display: inline-block;
+        padding: 12px 22px;
+        margin: 25px 0;
+        background-color: #e4e3e3; /* --nav-btns-bg */
+        color: #1e3a8a; /* --nav-btns-text */
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 6px;
+      }
+      .cta-button:hover {
+        background-color: rgb(234, 236, 241); /* --nav-btns-bg-hover */
+      }
+      .footer {
+        margin-top: 25px;
+        font-size: 14px;
+        color: #555555; /* --UserDontHaveAccount-p */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Hello {{name}},</h2>
+      <p>
+        This is a notification that your <span class="highlight">account role</span> on 
+        <strong>WealthWise</strong> has been successfully updated.
+      </p>
+
+      <p>
+        Please log in to your dashboard to confirm the changes and continue
+        managing your investments with full access.
+      </p>
+
+      <a href="{{link}}" target="_blank" class="cta-button">Login to Dashboard</a>
+
+      <p>
+        At WealthWise, we’re committed to empowering your financial growth and
+        ensuring you have the right tools for smarter investing.
+      </p>
+
+      <p class="footer">To your continued success,<br />The WealthWise Team</p>
+    </div>
+  </body>
+</html>

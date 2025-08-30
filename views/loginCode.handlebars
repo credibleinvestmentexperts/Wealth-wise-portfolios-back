@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Code – WealthWise</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8; /* --neutral-light */
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        background: #ffffff; /* --plan-bg */
+        padding: 25px;
+        border-radius: 8px;
+        border: 1px solid #cfd8e3; /* --nav-btns-bor-bottom */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        text-align: start;
+        margin: auto;
+      }
+      h2 {
+        color: #1e3a8a; /* --nav-linkss */
+        margin-bottom: 15px;
+        font-size: 22px;
+      }
+      p {
+        color: #0a1f44; /* --text-dark */
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 10px 0;
+      }
+      .highlight {
+        font-weight: bold;
+        color: #1e40af; /* --primary-accent-alt */
+      }
+      .code-box {
+        display: inline-block;
+        padding: 14px 28px;
+        margin: 25px 0;
+        background-color: #e4e3e3; /* --nav-btns-bg */
+        color: #1e3a8a; /* --nav-btns-text */
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 6px;
+        letter-spacing: 3px;
+      }
+      .footer {
+        margin-top: 25px;
+        font-size: 14px;
+        color: #555555; /* --UserDontHaveAccount-p */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Secure Login Code</h2>
+      <p>Hello {{name}},</p>
+      <p>
+        Use the following <span class="highlight">6-digit code</span> to access your 
+        <strong>WealthWise</strong> account:
+      </p>
+
+      <div class="code-box">{{link}}</div>
+
+      <p>
+        This code is valid for <strong>1 hour</strong>. If you did not attempt to log in,
+        please reset your password immediately to protect your account.
+      </p>
+
+      <p class="footer">Stay secure,<br />The WealthWise Team</p>
+    </div>
+  </body>
+</html>

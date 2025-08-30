@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investment Approval Required</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f6f8;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 650px;
+        margin: auto;
+        background: #ffffff;
+        border-radius: 8px;
+        padding: 25px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      }
+
+      h2 {
+        color: #2f4f4f;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 16px;
+        color: #333333;
+        line-height: 1.6;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+      }
+
+      ul li {
+        margin: 10px 0;
+        font-size: 15px;
+        color: #444444;
+        background: #f9f9f9;
+        padding: 10px 12px;
+        border-radius: 5px;
+      }
+
+      ul li strong {
+        color: #2f4f4f;
+      }
+
+      .cta {
+        text-align: center;
+        margin-top: 25px;
+      }
+
+      .cta a {
+        display: inline-block;
+        padding: 12px 22px;
+        margin: 25px 0;
+        background-color: #e4e3e3; /* --nav-btns-bg */
+        color: #1e3a8a; /* --nav-btns-text */
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 6px;
+      }
+
+      .cta a:hover {
+        background-color: rgb(234, 236, 241); /* --nav-btns-bg-hover */
+      }
+
+      .footer {
+        margin-top: 30px;
+        font-size: 13px;
+        color: #777;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Investment Approval Required</h2>
+      <p>Hello Admin,</p>
+      <p>
+        A new investment request has been submitted and is awaiting your
+        approval. Please review the details below:
+      </p>
+
+      <ul>
+        <li><strong>User:</strong> {{userName}} ({{userEmail}})</li>
+        <li><strong>Investment Plan:</strong> {{plan}}</li>
+        <li><strong>Amount:</strong> ${{amount}}</li>
+        <li><strong>Start Date:</strong> {{startDate}}</li>
+        <li><strong>End Date:</strong> {{endDate}}</li>
+        <li><strong>Maturity Amount:</strong> ${{maturityAmount}}</li>
+      </ul>
+
+      <div class="cta">
+        <a
+          href="https://www.wealtybuilders.com/admin-pending-investment"
+          target="_blank"
+        >
+          Approve or Reject Investment
+        </a>
+      </div>
+
+      <p class="footer">
+        This is an automated message. Please log in to your admin dashboard to
+        manage investments.
+      </p>
+    </div>
+  </body>
+</html>

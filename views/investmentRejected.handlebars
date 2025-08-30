@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investment Rejected - WealthWise</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8; /* Neutral background */
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        background: #ffffff; /* Card */
+        padding: 25px;
+        border-radius: 8px;
+        border: 1px solid #cfd8e3; /* Subtle border */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        margin: auto;
+      }
+      .logo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .logo h2 {
+        margin: 0;
+        color: #1e3a8a; /* Brand dark */
+        font-size: 22px;
+      }
+      h2 {
+        color: #e53935; /* Red for rejection */
+        margin-bottom: 15px;
+        font-size: 20px;
+      }
+      p {
+        color: #0a1f44; 
+        font-size: 15px;
+        line-height: 1.6;
+      }
+      ul {
+        padding: 0;
+        margin: 15px 0;
+      }
+      li {
+        list-style: none;
+        margin-bottom: 8px;
+        font-size: 15px;
+        color: #0a1f44;
+      }
+      .highlight {
+        color: #1e40af; /* Accent blue */
+        font-weight: bold;
+      }
+      .amount {
+        color: #e53935; /* Highlight rejected money */
+        font-weight: bold;
+      }
+      .cta-button {
+        display: inline-block;
+        padding: 12px 22px;
+        margin: 25px 0;
+        background-color: #e53935; /* Red button */
+        color: #ffffff; /* White text */
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 6px;
+      }
+      .cta-button:hover {
+        background-color: #d32f2f; /* Darker red */
+      }
+      .footer {
+        margin-top: 25px;
+        font-size: 14px;
+        color: #555555; 
+        text-align: center;
+      }
+      strong {
+        color: #1e40af;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <h2>WealthWise</h2>
+      </div>
+
+      <!-- Greeting -->
+      <h2>Hello <span class="highlight">{{name}}</span>,</h2>
+
+      <!-- Content -->
+      <p>
+        We regret to inform you that your recent investment request was <strong>not approved</strong>.
+      </p>
+
+      <!-- Investment Details -->
+      <ul>
+        <li><strong>Plan:</strong> <span class="highlight">{{plan}}</span></li>
+        <li><strong>Amount:</strong> <span class="amount">${{amount}}</span></li>
+        <li><strong>Start Date:</strong> <span class="highlight">{{startDate}}</span></li>
+        <li><strong>End Date:</strong> <span class="highlight">{{endDate}}</span></li>
+        <li><strong>Maturity Amount:</strong> <span class="amount">${{maturityAmount}}</span></li>
+      </ul>
+
+      <!-- CTA -->
+      <p>If you have any questions or need clarification, please reach out to our support team.</p>
+      <a href="https://www.wealthwise.com/contact" class="cta-button">Contact Support</a>
+
+      <!-- Footer -->
+      <p class="footer">
+        Best regards,<br />
+        <strong>WealthWise Team</strong>
+      </p>
+    </div>
+  </body>
+</html>

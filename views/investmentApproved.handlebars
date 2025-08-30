@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investment Confirmation - WealthWise</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8; /* Neutral light */
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        background: #ffffff; /* Card background */
+        padding: 25px;
+        border-radius: 8px;
+        border: 1px solid #cfd8e3; /* Border */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        margin: auto;
+      }
+      .logo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .logo h2 {
+        margin: 0;
+        color: #1e3a8a; /* Brand dark */
+        font-size: 22px;
+      }
+      h2 {
+        color: #1e3a8a; 
+        margin-bottom: 15px;
+        font-size: 20px;
+      }
+      p {
+        color: #0a1f44; /* Text dark */
+        font-size: 15px;
+        line-height: 1.6;
+      }
+      ul {
+        padding: 0;
+        margin: 15px 0;
+      }
+      li {
+        list-style: none;
+        margin-bottom: 8px;
+        font-size: 15px;
+        color: #0a1f44;
+      }
+      .highlight {
+        color: #1e40af; /* Accent */
+        font-weight: bold;
+      }
+      .amount {
+        color: #e53935; /* Red highlight for money */
+        font-weight: bold;
+      }
+      .status {
+        color: #1e40af; 
+        font-weight: bold;
+      }
+      .cta-button {
+        display: inline-block;
+        padding: 12px 22px;
+        margin: 25px 0;
+        background-color: #e4e3e3; /* Button background */
+        color: #1e3a8a; /* Button text */
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 6px;
+      }
+      .cta-button:hover {
+        background-color: rgb(234, 236, 241);
+      }
+      .footer {
+        margin-top: 25px;
+        font-size: 14px;
+        color: #555555; 
+        text-align: center;
+      }
+      strong {
+        color: #1e40af;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <h2>WealthWise</h2>
+      </div>
+
+      <!-- Greeting -->
+      <h2>Hello <span class="highlight">{{name}}</span>,</h2>
+
+      <!-- Content -->
+      <p>
+        Thank you for choosing to invest with <strong>WealthWise</strong>!  
+        Below are the details of your investment:
+      </p>
+
+      <!-- Investment Details -->
+      <ul>
+        <li><strong>Plan:</strong> <span class="highlight">{{plan}}</span></li>
+        <li><strong>Amount Invested:</strong> <span class="amount">${{amount}}</span></li>
+        <li><strong>Investment Start Date:</strong> <span class="highlight">{{startDate}}</span></li>
+        <li><strong>Plan Duration:</strong> <span class="highlight">{{investmentDurationDays}}</span> days</li>
+        <li><strong>Profit Maturity Date:</strong> <span class="highlight">{{maturityDate}}</span></li>
+        <li><strong>Expected Profit (incl. interest):</strong> <span class="amount">${{maturityAmount}}</span></li>
+      </ul>
+
+      <!-- CTA -->
+      <p>You can view your investment details anytime by clicking the button below:</p>
+      <a href="{{link}}" class="cta-button">View Investment</a>
+
+      <!-- Footer -->
+      <p class="footer">
+        Best regards,<br />
+        <strong>WealthWise Team</strong>
+      </p>
+    </div>
+  </body>
+</html>
