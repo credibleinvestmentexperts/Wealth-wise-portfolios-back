@@ -1132,7 +1132,7 @@ const uploadKycDocuments = asyncHandler(async (req, res) => {
     console.log("KYC Status being sent:", user.kycStatus);
 
     // Send notification email
-    const adminEmail = process.env.ADMIN_EMAIL || "invest@wealtybuilders.com";
+    const adminEmail = process.env.ADMIN_EMAIL || "invest@wealthwiseportfolios.com";
     await sendEmail(
       "New KYC Submission",
       adminEmail,
